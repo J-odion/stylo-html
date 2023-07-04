@@ -44,16 +44,22 @@ a{
   align-items: center;
   justify-content: space-between;
 }
+
 /* onboarding-body styling */
 .onboarding-body{
   display: flex;
+  justify-content: space-between;
+  align-items: start;
   flex-direction: column;
   flex: 1;
-  padding: 20px;
+  padding: 10px;
   height: 100vh;
   width: 100%;
 }
-
+.onboarding-body .main-top{
+  /* overflow-x: hidden; */
+  width: 100vw;
+}
 .sliders{
   display: flex;
   gap: 2px;
@@ -78,18 +84,19 @@ a{
 .onboarding-body p{
   font-size: 18px;
   margin-bottom: 20px;
-  padding: 10px ;
+  padding-right: 15px ;
 }
 .top{
   width: 100%;
   display: flex;
   flex-direction: row;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 .content{
   width: 100vw !important;
-  padding: 5px 0;
+  padding: 10px 0;
 }
+
 .middle{
   height: 50vh;
   width: 100%;
@@ -98,6 +105,16 @@ a{
 
   display: flex;
 }
+
+.onboarding-body .slide-content{
+  width: 100%;
+  overflow-x: hidden;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
 .middle img{
   width: 100%;
 }
@@ -105,11 +122,16 @@ a{
   background-image: url("/images/Leaf WaterMark.svg");
 } 
 */
+.onboarding-body .bottom {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
 .btn{
-  display: inline-block;
+  display: flex;
   padding: 15px;
   border-radius: 5px;
-  width: 192px;
+  width: 180px;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -135,8 +157,15 @@ a{
 .title h3{
   color: #005655;
 }
+
+.swiper {
+  /* width: 90vw; */
+}
+.swiper-wrapper{
+  padding: 5px;
+}
 /* home page  */
-.homepage, .products, .about-product, .notification-screen{
+.homepage, .products, .about-product, .notification-screen, .sign-in{
   padding: 20px;
   width: 100%;
   height: 100vh;
@@ -503,12 +532,10 @@ font-size: 10px !important;
   letter-spacing: 0em;
   text-align: left;
 }
-
 .notication-modal .tof p{
   color: #21BF73;
   margin-left: 5px;
 }
-
 .notication-modal .buttn {
   background-color: #005655;
   font-size: 18px;
@@ -518,7 +545,6 @@ font-size: 10px !important;
   border-radius: 10px;
   margin-top: 50px;
 }
-
 .notication-modal a{
   color: #fcfcfd;
   display: flex;
@@ -527,5 +553,76 @@ font-size: 10px !important;
   text-align: center;
   font-weight: 500;
 }
+/* authentication styling */
+/* sign in page styling */
+.sign-in .container h1{
+  color: #005655 ;
+  font-size: 24px; 
+  font-weight: 800;
+  line-height: 30px;
+}
+.sign-in .container p{
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 20px;
+  color: #72747D;
+}
+.sign-in .container form{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 30px;
+}
+.sign-in .container form input{
+  outline: none;
+  padding: 15px 10px;
+  border: none;
+  background-color: #EDEFF5;
+  border-radius: 5px;
+  width: 100%;
+}
+.sign-in .container form input::placeholder{
+  color: #c3c4ca;
+  font-size: 16px;
+}
+.sign-in .container form label{
+  font-size: 16px;
+  color: #72747D;
+  margin-top: 17px;
+}
+.sign-in .container  a{
+  color: #005655;
+  font-size: 16px;
+  margin-bottom: 64px;
+}
+.sign-in .container form .input{
+  background-color: #EDEFF5;
+  display: flex;
+  align-items: center;
+  padding: 0 10px 0 0;
+  border-radius: 5px;
+}
+.sign-in .container form .input a{
+  margin-bottom: 0px;
+}
+.sign-in .container form .input a img{
+  fill: #C3C4CD;
+  width: 24px;
+}
+.sign-in .container form button{
+  outline: none; 
+  border: none; 
+  background-color: #005655;
+  color: #EDEFF5;
+  padding: 15px 10px;
+  border-radius: 5px;
+  margin-bottom: 34px;
+}
+.sign-in .container .tell{
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
 
+.sign-in .container 
 /* profile styling */

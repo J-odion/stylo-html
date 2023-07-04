@@ -4,94 +4,91 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Onboarding</title>
+
     <link
-      href="
-https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
-"
       rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
     />
 
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="onboarding-body">
-      <div class="group">
-        <div class="sliders">
-          <a href="#content1" class="slidder color3 first-slider"></a>
-          <a href="#content2" class="slidder color4"></a>
-          <a href="#content3" class="slidder color4 last-slider"></a>
+      <div class="main-top">
+        <div class="group">
+          <div class="sliders swiper-pagination">
+            <div class="slidder color3 first-slider"></div>
+            <div class="slidder color4"></div>
+            <div class="slidder color4 last-slider"></div>
+          </div>
+        </div>
+        <div class="top">
+          <!-- Slider main container -->
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides 1-->
+              <div class="swiper-slide">
+                <div id="content1" class="content">
+                  <h2 class="primary-text">monitor <br />products</h2>
+
+                  <p class="secondary-text">
+                    Get the latest price of product to help with your sales and
+                    purchase. Don't get cheated again
+                  </p>
+
+                  <div class="slide-content">
+                    <img src="/images/Onboarding Image 2.svg" alt="" />
+                  </div>
+                </div>
+              </div>
+              <!-- Slides 2-->
+              <div class="swiper-slide">
+                <div id="content2" class="content">
+                  <h2 class="primary-text">
+                    Invest in <br />
+                    Products
+                  </h2>
+
+                  <p class="secondary-text">
+                    Opportunity to invest in diverse agricultural produce. Also
+                    a platform to redeem your investment anytime.
+                  </p>
+
+                  <div class="slide-content">
+                    <img
+                      src="/images/Male investor gaining profit from investment.svg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+              <!-- Slides 3-->
+              <div class="swiper-slide">
+                <div id="content3" class="content">
+                  <h2 class="primary-text">Receive <br />Payments</h2>
+
+                  <p class="secondary-text">
+                    Create invoice and payment links for your customers, free of
+                    charge so you don’t have to miss any.
+                  </p>
+
+                  <div class="slide-content">
+                    <img src="/images/Group.svg" alt="" />
+                  </div>
+                </div>
+              </div>
+              ...
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
         </div>
       </div>
-      <div class="top">
-        <div id="content1" class="content">
-          <h2 class="primary-text">monitor <br />products</h2>
 
-          <p class="secondary-text">
-            Get the latest price of product to help with your sales and
-            purchase. Don't get cheated again
-          </p>
-
-          <div class="middle">
-            <img src="/images/Onboarding Image 2.svg" alt="" />
-          </div>
-        </div>
-
-        <div id="content2" class="content">
-          <h2 class="primary-text">
-            Invest in <br />
-            Products
-          </h2>
-
-          <p class="secondary-text">
-            Opportunity to invest in diverse agricultural produce. Also a
-            platform to redeem your investment anytime.
-          </p>
-
-          <div class="middle">
-            <img
-              src="/images/Male investor gaining profit from investment.svg"
-              alt=""
-            />
-          </div>
-        </div>
-
-        <div id="content3" class="content">
-          <h2 class="primary-text">Receive <br />Payments</h2>
-
-          <p class="secondary-text">
-            Create invoice and payment links for your customers, free of charge
-            so you don’t have to miss any.
-          </p>
-
-          <div class="middle">
-            <img src="/images/Group.svg" alt="" />
-          </div>
-        </div>
-      </div>
-
-      <section class="splide" aria-label="Slide Container Example">
-        <div class="splide__track">
-          <ul class="splide__list">
-            <li class="splide__slide">
-              <div class="splide__slide__container">
-                <img
-                  src="/images/Male investor gaining profit from investment.svg"
-                />
-              </div>
-              Lorem Ipsum Dolor Sit Amet
-            </li>
-            <li class="splide__slide">
-              <div class="splide__slide__container">
-                <img src="..." />
-              </div>
-              Lorem Ipsum Dolor Sit Amet
-            </li>
-          </ul>
-        </div>
-      </section>
       <div class="bottom group">
         <div class="btn button1">
-          <a href="" class="secondary-text"> Sign In</a>
+          <a href="/sign-in.html" class="secondary-text"> Sign In</a>
         </div>
         <div class="btn button2">
           <a href="" class="primary-text"> get started</a>
@@ -99,8 +96,35 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
       </div>
     </div>
 
-    <script src="
-https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
-"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script type="module">
+      import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.mjs'
+
+      const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+        speed: 400,
+        autoplay: {
+          delay: 40,
+        },
+
+        // If we need pagination
+        pagination: {
+          el: '.swiper-pagination',
+        },
+
+        // Navigation arrows
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+          el: 'sliders',
+        },
+      })
+    </script>
   </body>
 </html>
