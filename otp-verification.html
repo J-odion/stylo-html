@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sign in</title>
+    <title>Email Verification</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -18,37 +18,21 @@
       </div>
 
       <div class="container">
-        <h1>Sign in</h1>
-        <p>Enter your details to continue</p>
+        <h1>Email Verification</h1>
+        <p>Enter six digit code sent to user****me@email.com</p>
 
         <form action="">
           <label for="email">Email Address</label>
           <input
+            class="otp-text"
             type="email"
             name="email"
             id="email"
-            placeholder="name@gmail.com"
+            placeholder="00:00:00"
           />
-          <label for="email">Password</label>
-          <div class="input">
-            <input
-              type="password"
-              name="password"
-              id="password"
-              placeholder="password"
-            />
-            <a href=""><img src="./images/eye-off.svg" alt="" /></a>
-          </div>
 
-          <a href="./reset-password.html">Forgot Password?</a>
-
-          <button>Sign In</button>
+          <p class="otp-timer">Didn’t receive a code? Resend in 0:41s</p>
         </form>
-
-        <div class="tell">
-          <p class="tell">Don't have an account?</p>
-          <a href="./sign-up.html">Create Account</a>
-        </div>
       </div>
     </div>
   </body>
