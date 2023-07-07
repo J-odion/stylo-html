@@ -143,7 +143,7 @@ a{
   background: #C9F001;
 }
 
-.back {
+.back{
   border-radius: 40px;
   border: #EDEFF5 1px solid;
   padding: 5px;
@@ -563,25 +563,25 @@ font-size: 10px !important;
 }
 /* authentication styling */
 /* sign in page styling */
-.sign-in .container h1{
+.container h1{
   color: #005655 ;
   font-size: 24px; 
   font-weight: 800;
   line-height: 30px;
 }
-.sign-in .container p{
+ .container p{
   font-size: 14px;
   font-weight: 300;
   line-height: 20px;
   color: #72747D;
 }
-.sign-in .container form{
+ .container form{
   display: flex;
   flex-direction: column;
   gap: 10px;
   margin-top: 30px;
 }
-.sign-in .container form input{
+ .container form input{
   outline: none;
   padding: 15px 10px;
   border: none;
@@ -589,41 +589,41 @@ font-size: 10px !important;
   border-radius: 5px;
   width: 100%;
 }
-.sign-in .container .otp-text{
+ .container .otp-text{
   text-align: center;
 }
 .sign-in .container .otp-timer{
   text-align: center;
   margin-top: 60px;
 }
-.sign-in .container form input::placeholder{
+ .container form input::placeholder{
   color: #c3c4ca;
   font-size: 16px;
 }
-.sign-in .container form label{
+.container form label{
   font-size: 16px;
   color: #72747D;
   margin-top: 17px;
 }
-.sign-in .container  a{
+ .container  a{
   color: #005655;
   font-size: 16px;
 }
-.sign-in .container form .input{
+ .container form .input{
   background-color: #EDEFF5;
   display: flex;
   align-items: center;
   padding: 0 10px 0 0;
   border-radius: 5px;
 }
-.sign-in .container form .input a{
+ .container form .input a{
   margin-bottom: 0px;
 }
-.sign-in .container form .input a img{
+ .container form .input a img{
   fill: #C3C4CD;
   width: 24px;
 }
-.sign-in .container form button{
+ .container form button{
   outline: none; 
   border: none; 
   background-color: #005655;
@@ -633,7 +633,7 @@ font-size: 10px !important;
   margin-top: 64px;
   margin-bottom: 34px;
 }
-.sign-in .container .tell{
+ .container .tell{
   display: flex;
   gap: 10px;
   justify-content: center;
@@ -809,5 +809,74 @@ font-size: 10px !important;
 .others .list .left{
   display: flex;
   align-items: center;
+  gap: 10px;
+}
+/* edit profile  */
+.edit-profile-screen{
+  display: flex;
+  flex-direction: column;
+  padding: 20px;  
+}
+.edit-profile-screen .back{
+  border-radius: 40px;
+    border: #EDEFF5 1px solid;
+    padding: 5px;
+    color: #EDEFF5;
+    width: 38px;
+    display: flex;
+    margin-bottom: 20px;
+}
+.profile-pics-section{
+  display: flex;
+  align-items: center;
+}
+.profile-pics {
+  display: flex;
+  justify-content: baseline;
+  align-items: baseline;
+}
+.profile-pics .pixs{
+  border-radius: 50%;
+  width: 85px;
+  border: solid 2px ;
+  object-fit: contain;
+}
+.profile-pics a{
+  height: 20px;
+  position: relative;
+  bottom: 20px;
+  right: 20px;
+}
+.profile-pics a img{
+  background-color: rgba(167, 174, 193, 0.5);
+  border-radius: 50%;
+  border: solid 2px #FFFFFF;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+}
+.profile-pics-section .texts p{
+  font-size: 12px ;
+  line-height: 20px;
+  font-weight: 300;
+}
+ .row{
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+ .row select{
+  border: none;
+  background: none;
+  padding: 12px;
+  font-size: 18px;
+  font-weight: 300;
+  outline: none;
+  width: 100%;
+}
+ .row .gend,  .row .dob {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
   gap: 10px;
 }
