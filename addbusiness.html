@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Add Businness</title>
+  <link rel="stylesheet" href="style.css" />
+
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/css/intlTelInput.css" />
+</head>
+
+<body>
+  <div class="sign-in">
+    <!-- navigation -->
+    <div class="nav">
+      <a href="">
+        <div class="back">
+          <img src="./images/arrow-left-black.svg" alt="" />
+        </div>
+      </a>
+    </div>
+
+    <div class="container">
+      <h1>Add Business</h1>
+      <p>Create business account by filling out the form</p>
+
+      <form action="">
+        <div id="section1">
+          <label for="business-name">
+            Business Name
+          </label>
+          <input type="text" name="business-name" id="business-name" placeholder="Bright Enterprise" />
+          <label for="last-name">
+            Last Name
+          </label>
+          <input type="text" name="last-name" id="last-name" placeholder="e.g Doe" />
+          <label for="email">
+            Email Address
+          </label>
+          <input type="email" name="email" id="email" placeholder="info@brightenterprise.com" />
+          <label for="email">
+            Phone Number
+          </label>
+          <input name="phone" type="text" id="phone" />
+
+          <label for="desc">
+            Business Description
+          </label>
+          <textarea name="desc" id="desc" placeholder="e.g Doe" rows="10"></textarea>
+
+          <button type="button" onclick="nextSection()">Next</button>
+        </div>
+
+        <div id="section2" style="display: none;">
+          <div class="row down">
+            <div class="gend">
+              <label for="country">Country</label>
+              <div class="input">
+                <select name="country">
+                  <option value="">Country</option>
+                </select>
+              </div>
+            </div>
+            <div class="dob">
+              <label for="state">State</label>
+              <div class="input">
+                <select name="state">
+                  <option value="">State</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <label for="email">Office Address</label>
+          <input type="text" name="home-address" id="home-address"
+            placeholder="A37 Omobola Street, Lawanson Surulere Lagos." class="down" />
+
+          <!-- continue here -->
+
+          <label for="email">Business Profile Image</label>
+          <div class="file-upload-container down">
+            <label for="fileInput" class="file-upload-prompt">Upload File</label>
+            <p>(600 X 600px, JPG, JPEG, PNG, Max 3MB)</p>
+            <input type="file" id="fileInput" name="file" onchange="handleFileUpload(this)">
+          </div>
+
+
+          <label for="email">
+            Authorized Business Signature (Optional)
+          </label>
+          <div class="file-upload-container down">
+            <label for="fileInput" class="file-upload-prompt">Upload File</label>
+            <p>(600 X 600px, JPG, JPEG, PNG, Max 3MB)</p>
+            <input type="file" id="fileInput" name="file" onchange="handleFileUpload(this)">
+          </div>
+
+
+          <div class="toggle-container down">
+            <label class="toggle-label">Registered with CAC</label>
+            <label class="toggle-button">
+              <input type="checkbox" id="toggleInput" onclick="togglePosition()">
+            </label>
+          </div>
+
+
+
+          <div class="row">
+            <div class="gend">
+              <label for="country">RC or BC Number</label>
+              <div class="input">
+                <select name="country">
+                  <option value="">Country</option>
+                </select>
+              </div>
+            </div>
+            <div class="dob">
+              <label for="state">Year Founded</label>
+              <div class="input">
+                <input type="date" name="" id="">
+              </div>
+            </div>
+          </div>
+
+          <label for="email">
+            CAC registration Document
+          </label>
+          <div class="file-upload-container down">
+            <label for="fileInput" class="file-upload-prompt">Upload File</label>
+            <p>(600 X 600px, JPG, JPEG, PNG, Max 3MB)</p>
+            <input type="file" id="fileInput" name="file" onchange="handleFileUpload(this)">
+          </div>
+          <!-- end here -->
+
+
+
+
+
+          <button class="submit-btn" type="submit">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/js/intlTelInput.min.js"></script>
+  <script>
+    var input = document.querySelector('#phone')
+    window.intlTelInput(input, {
+      initialCountry: 'ng',
+      separateDialCode: true,
+      autoFormat: true,
+      validation: true,
+      utilsScript:
+        'https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/js/utils.js',
+    });
+
+    function nextSection() {
+      document.getElementById("section1").style.display = "none";
+      document.getElementById("section2").style.display = "block";
+    };
+
+    function previousSection() {
+      document.getElementById("section1").style.display = "block";
+      document.getElementById("section2").style.display = "none";
+    };
+
+    function validateImage(input) {
+      var allowedTypes = ["image/jpeg", "image/jpg", "image/png"];
+      var maxFileSize = 3 * 1024 * 1024; // 3MB
+      var maxWidth = 600;
+      var maxHeight = 600;
+      var file = input.files[0];
+      var image = new Image();
+
+      image.onload = function () {
+        if (
+          allowedTypes.includes(file.type) &&
+          file.size <= maxFileSize &&
+          image.width <= maxWidth &&
+          image.height <= maxHeight
+        ) {
+          document.getElementById("errorText").textContent = "";
+        } else {
+          document.getElementById("errorText").textContent =
+            "Invalid image. Please ensure it is a JPEG, JPG, or PNG file within 3MB and with dimensions 600x600px.";
+          input.value = ""; // Clear the input field if the image is invalid
+        }
+      };
+
+      if (file) {
+        image.src = URL.createObjectURL(file);
+      }
+    };
+
+    function handleFileUpload(input) {
+      var file = input.files[0];
+      // Handle the file upload logic here
+      console.log(file);
+    };
+
+    function togglePosition() {
+      var toggleButton = document.querySelector(".toggle-button");
+      toggleButton.classList.toggle("on");
+    };
+
+
+  </script>
+
+</html>

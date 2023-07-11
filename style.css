@@ -880,3 +880,163 @@ font-size: 10px !important;
   flex: 1;
   gap: 10px;
 }
+/* business info */
+.spread{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.spread img{
+  background-color: #005655;
+}
+.spread a{
+  display: flex;
+  background-color: #005655;
+  color: #EDEFF5;
+  padding: 10px 12px;
+  gap: 15px;
+  border-radius: 5px;
+}
+.empty{
+  display: flex;
+  align-items: center;
+  padding: 30px;
+  background-color: rgba(201, 240, 1, 0.1);
+  /* opacity: 5%; */
+  border-radius: 50%;
+}
+
+.textes {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.textes p{
+  width: 100%;
+  font-weight: 300;
+}
+.textes a{
+  padding: 0px;
+  background-color:  #ffffff;
+    display: flex;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    color: #005655;
+    font-weight: 300;
+    border-radius: none;
+    margin-top: 20px;
+}
+textarea{
+  background-color: #EDEFF5;
+  border: none;
+  resize: vertical;
+  padding: 10px;
+}
+#section1, #section2{
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+  width: 100%;
+}
+#section2 button{
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 600;
+  width: 100%;
+}
+
+.down{
+  margin-bottom: 20px;
+}
+
+.upload-file{
+  border: dashed #C3C4CD 3px;
+  border-spacing: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.upload-file input{
+  background-color: #fff !important;
+}
+
+.file-upload-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px dashed #999 ;
+  padding: 5px 0px;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+
+
+.file-upload-prompt {
+  text-decoration: underline;
+  color: #0C923B !important;
+  font-size: 15px !important;
+  font-weight: 400;
+  letter-spacing: 1.2px;
+  margin-bottom: 5px ;
+}
+
+#fileInput {
+  display: none;
+}
+.toggle-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.toggle-label {
+  margin-right: 10px;
+}
+
+.toggle-button {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 30px;
+  background-color: #ccc;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.toggle-button:before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background-color: #fff;
+  transition: transform 0.3s ease;
+}
+
+.toggle-button.on {
+  background-color: #6ab04c;
+}
+
+.toggle-button.on:before {
+  transform: translateX(30px);
+}
+
+/* Hide the checkbox */
+.toggle-button input[type="checkbox"] {
+  display: none;
+  /* opacity: 0; */
+  height: 2em;
+  top: 10px;
+  width: 20px;
+}

@@ -8,11 +8,8 @@
 
     <link
       rel="stylesheet"
-      href="https://cdn.tutorialjinni.com/intl-tel-input/17.0.8/css/intlTelInput.css"
+      href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/css/intlTelInput.css"
     />
-    <script src="https://bossanova.uk/jsuites/v3/jsuites.js"></script>
-    <link rel="stylesheet" href="https://bossanova.uk/jsuites/v3/jsuites.css"
-    type="text/css"
   </head>
   <body>
     <div class="edit-profile-screen">
@@ -128,12 +125,16 @@
       </div>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/js/intlTelInput.min.js"></script>
     <script>
       var input = document.querySelector('#phone')
       window.intlTelInput(input, {
+        initialCountry: 'ng',
         separateDialCode: true,
-        excludeCountries: ['in', 'il'],
-        preferredCountries: ['ng'],
+        autoFormat: true,
+        validation: true,
+        utilsScript:
+          'https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/js/utils.js',
       })
     </script>
   </body>
