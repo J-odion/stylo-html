@@ -1054,3 +1054,24 @@ textarea{
   justify-content: center;
   border-radius: 5px;
 }
+.monitored{
+  display: flex;
+  gap: 15px;
+}
+ .monitored img{
+  border-radius: 10px !important;
+}
+.monitored  .texts{
+  display: flex;
+  flex-direction: column;
+  gap: 2px !important;
+}
+.monitored .texts h3{
+  display: flex;
+  top: -5px;
+}
+.monitored .texts p{
+  display: flex;
+
+  padding: 0px !important;
+}
