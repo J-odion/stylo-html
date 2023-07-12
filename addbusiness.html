@@ -94,18 +94,13 @@
             <p>(600 X 600px, JPG, JPEG, PNG, Max 3MB)</p>
             <input type="file" id="fileInput" name="file" onchange="handleFileUpload(this)">
           </div>
-
-
           <div class="toggle-container down">
             <label class="toggle-label">Registered with CAC</label>
             <label class="toggle-button">
               <input type="checkbox" id="toggleInput" onclick="togglePosition()">
             </label>
           </div>
-
-
-
-          <div class="row">
+          <div class="row down">
             <div class="gend">
               <label for="country">RC or BC Number</label>
               <div class="input">
@@ -121,21 +116,15 @@
               </div>
             </div>
           </div>
-
           <label for="email">
             CAC registration Document
           </label>
-          <div class="file-upload-container down">
+          <div class="file-upload-container">
             <label for="fileInput" class="file-upload-prompt">Upload File</label>
             <p>(600 X 600px, JPG, JPEG, PNG, Max 3MB)</p>
             <input type="file" id="fileInput" name="file" onchange="handleFileUpload(this)">
           </div>
           <!-- end here -->
-
-
-
-
-
           <button class="submit-btn" type="submit">
             Submit
           </button>
@@ -204,8 +193,5 @@
       var toggleButton = document.querySelector(".toggle-button");
       toggleButton.classList.toggle("on");
     };
-
-
   </script>
-
 </html>
