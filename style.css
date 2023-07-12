@@ -864,6 +864,7 @@ font-size: 10px !important;
   display: flex;
   justify-content: space-between;
   gap: 20px;
+  align-items: center;
 }
  .row select{
   border: none;
@@ -904,6 +905,11 @@ font-size: 10px !important;
   background-color: rgba(201, 240, 1, 0.1);
   /* opacity: 5%; */
   border-radius: 50%;
+}
+
+.full{
+  height: 100vh !important;
+  top: -30px;
 }
 
 .textes {
@@ -955,7 +961,8 @@ textarea{
 }
 
 .upload-file{
-  border: dashed #C3C4CD 3px;
+  border: dashed #C3C4CD 2px;
+  border-radius: 5px !important;
   border-spacing: 20px;
   justify-content: center;
   align-items: center;
@@ -972,6 +979,7 @@ textarea{
   justify-content: center;
   align-items: center;
   border: 2px dashed #999 ;
+  border-radius: 5px;
   padding: 5px 0px;
   cursor: pointer;
   margin-top: 5px;
@@ -1039,4 +1047,12 @@ textarea{
   height: 2em;
   top: 10px;
   width: 20px;
+}
+.signatures{
+  padding: 8px;
+  border: #C3C4CD solid 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
 }

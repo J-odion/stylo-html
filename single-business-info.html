@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Business Information</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/css/intlTelInput.css"
+    />
+  </head>
+  <body>
+    <div class="edit-profile-screen">
+      <div class="nav">
+        <a href="">
+          <div class="back">
+            <img src="./images/arrow-left-black.svg" alt="" />
+          </div>
+        </a>
+        <div class="title notice">
+          <h3>Business Info</h3>
+        </div>
+      </div>
+      <div class="profile-pics-section">
+        <div class="profile-pics">
+          <img class="pixs" src="./images/image 126.svg" alt="" />
+          <a href="">
+            <img src="./images/camera.svg" alt="" />
+          </a>
+        </div>
+
+        <div class="texts">
+          <p>Select Image</p>
+          <p>(JPG, JPEG, PNG, Max 3MB)</p>
+        </div>
+      </div>
+
+      <div class="container">
+        <form action="">
+          <label for="business-name">Business Name</label>
+          <input
+            type="text"
+            name="business-name"
+            id="business-name"
+            placeholder="Smith"
+          />
+
+          <label for="email">Email Adress</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="name@gmail.com"
+          />
+
+          <label for="email">Phone Number</label>
+          <input name="phone" type="text" id="phone" />
+          <div class="form-row">
+            <div class="row">
+              <div class="gend">
+                <label for="gender">Business Category</label>
+                <div class="input">
+                  <select name="gender">
+                    <option value="">Male</option>
+                    <option value="female">Female</option>
+                    <option value="male">Male</option>
+                    <option value="other">Other</option>
+                    <option value="Prefer not to answer">
+                      Perfer not to Answer
+                    </option>
+                  </select>
+                </div>
+              </div>
+              <div class="dob">
+                <label for="date-of-birth">Date of Birth</label>
+                <div class="input">
+                  <input
+                    type="date"
+                    name="date-of-birth"
+                    id="date-of-birth"
+                    value="01-01-2023"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="gend">
+              <label for="country">Country</label>
+              <div class="input">
+                <select name="country">
+                  <option value="">Country</option>
+                </select>
+              </div>
+            </div>
+            <div class="dob">
+              <label for="state">State</label>
+              <div class="input">
+                <select name="state">
+                  <option value="">State</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <label for="email">Home Adress</label>
+          <input
+            type="text"
+            name="home-address"
+            id="home-address"
+            placeholder="A37 Omobola Street, Lawanson Surulere Lagos."
+          />
+
+          <label for="email">Authorized Business Signature (Optional)</label>
+          <div class="row">
+            <div class="gend">
+              <div class="signatures">
+                <img src="./images/Groupsignature.svg" alt="" />
+              </div>
+            </div>
+            <div class="dob">
+              <div class="file-upload-container">
+                <label for="fileInput" class="file-upload-prompt"
+                  >Upload File</label
+                >
+                <p>(JPG, JPEG, PNG, Max 3MB)</p>
+                <input
+                  type="file"
+                  id="fileInput"
+                  name="file"
+                  onchange="handleFileUpload(this)"
+                />
+              </div>
+            </div>
+          </div>
+          <button>Save</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/js/intlTelInput.min.js"></script>
+    <script>
+      var input = document.querySelector('#phone')
+      window.intlTelInput(input, {
+        initialCountry: 'ng',
+        separateDialCode: true,
+        autoFormat: true,
+        validation: true,
+        utilsScript:
+          'https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/js/utils.js',
+      })
+    </script>
+  </body>
+</html>
