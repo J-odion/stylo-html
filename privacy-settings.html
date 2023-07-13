@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notification Settings</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="sign-in">
+      <!-- navigation -->
+      <div class="nav">
+        <a href="">
+          <div class="back">
+            <img src="./images/arrow-left-black.svg" alt="" />
+          </div>
+        </a>
+      </div>
+
+      <div class="title down">
+        <h3>Notification Settings</h3>
+      </div>
+
+      <div class="container">
+        <div class="toggle-container down">
+          <label class="toggle-label">Receive Mail Newsletter</label>
+          <label class="toggle-button">
+            <input
+              type="checkbox"
+              id="toggleInput"
+              onclick="togglePosition()"
+            />
+          </label>
+        </div>
+
+        <div class="toggle-container down">
+          <label class="toggle-label">Opt-in for SMS Notification</label>
+          <label class="toggle-buttin">
+            <input type="checkbox" id="toggleInput" onclick="togglePosion()" />
+          </label>
+        </div>
+
+        <div class="toggle-container down">
+          <label class="toggle-label">Enable Push Notification</label>
+          <label class="toggle-buton">
+            <input type="checkbox" id="toggleInput" onclick="togglePoon()" />
+          </label>
+        </div>
+        <div class="toggle-container down">
+          <label class="toggle-label">Receive Mail Newsletter</label>
+          <label class="toggle">
+            <input type="checkbox" id="toggleInput" onclick="toggle()" />
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function togglePosition() {
+        var toggleButton = document.querySelector('.toggle-button')
+        toggleButton.classList.toggle('on')
+      }
+
+      function togglePosion() {
+        var toggleButton = document.querySelector('.toggle-buttin')
+        toggleButton.classList.toggle('on')
+      }
+
+      function togglePoon() {
+        var toggleButton = document.querySelector('.toggle-buton')
+        toggleButton.classList.toggle('on')
+      }
+
+      function toggle() {
+        var toggleButton = document.querySelector('.toggle')
+        toggleButton.classList.toggle('on')
+      }
+    </script>
+  </body>
+</html>

@@ -1010,7 +1010,8 @@ textarea{
   margin-right: 10px;
 }
 
-.toggle-button {
+.toggle-button,  
+   .toggle-buttin, .toggle-buton, .toggle{
   position: relative;
   display: inline-block;
   width: 60px;
@@ -1021,7 +1022,7 @@ textarea{
   transition: background-color 0.3s ease;
 }
 
-.toggle-button:before {
+.toggle-button:before, .toggle-buttin:before, .toggle-buton:before, .toggle:before{
   content: "";
   position: absolute;
   top: 2px;
@@ -1033,16 +1034,16 @@ textarea{
   transition: transform 0.3s ease;
 }
 
-.toggle-button.on {
+.toggle-button.on, .toggle-buttin.on, .toggle-buton.on, .toggle.on {
   background-color: #6ab04c;
 }
 
-.toggle-button.on:before {
+.toggle-button.on:before, .toggle-buttin.on:before, .toggle-buton.on:before, .toggle.on:before {
   transform: translateX(30px);
 }
 
 /* Hide the checkbox */
-.toggle-button input[type="checkbox"] {
+.toggle-button input, .toggle-buttin input , .toggle-buton input, .toggle input[type="checkbox"] {
   display: none;
   /* opacity: 0; */
   height: 2em;
