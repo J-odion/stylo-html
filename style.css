@@ -798,6 +798,9 @@ font-size: 10px !important;
   flex-direction: column;
   gap: 10px;
 }
+.others .menu-lists a {
+  font-size: 16px;
+}
 .others .list{
   border: rgba(237, 239, 245, 1) solid 1px;
   display: flex;
@@ -1074,4 +1077,24 @@ textarea{
   display: flex;
 
   padding: 0px !important;
+}
+/* .security screen */
+.security{
+  padding: 20px;
+}
+
+.security h3{
+  font-weight: 800;
+}
+
+.shadow{
+    box-shadow: 1px 2px 4px 0px rgba(142, 142, 142, 0.18);
+}
+
+.inner p{
+  color: #005655 !important;
+}
+.inner a {
+  color: #005655 !important;
+  font-weight: bold;
 }
