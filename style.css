@@ -1237,3 +1237,76 @@ textarea{
   border-bottom: solid 1px rgba(237, 239, 245, 1);
   padding: 5px;
 }
+.newww{
+  width: 10px !important;
+}
+
+/* Basic styling */
+.payment-methods {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.payment-method {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.out{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: solid 1px #C3C4CD;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  background-color: #fff;
+}
+.in{
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  border-radius: 50%;
+}
+/* Hide the radio button */
+input[type="radio"] {
+  display: none;
+}
+
+/* Custom radio button styles */
+.bank-logo {
+  margin-right: 10px;
+}
+
+.bank-info {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Default styles for the bank name and account type */
+.bank-name {
+  font-weight: bold;
+}
+
+.account-type {
+  color: #666666;
+}
+
+/* Custom styles for the selected radio button */
+input[type="radio"]:checked+.row .out{
+  background-color: #005655;
+}
+
+input[type="radio"]:checked+.bank-info .bank-name {
+  color: #007AFF;
+  /* Change the color as desired */
+}
+.payment-method label{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment Method</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="sign-in">
+      <!-- navigation -->
+      <div class="nav">
+        <a href="">
+          <div class="back">
+            <img src="./images/arrow-left-black.svg" alt="" />
+          </div>
+        </a>
+      </div>
+      <div class="container">
+        <h1>Payment Method</h1>
+        <p>Select Payment Method</p>
+
+        <!-- <form action="">
+          <div style="padding: 15px" class="group">
+            <div class="row">
+              <input class="newww" type="radio" name="" id="" />
+              <div class="col">
+                <h2>$udo</h2>
+                <p>Payment Wallet</p>
+              </div>
+            </div>
+            <img src="./images/$udo.svg" alt="" />
+          </div>
+
+          <div style="padding: 15px" class="input">
+            <input type="radio" name="" id="" />
+          </div>
+          <div style="padding: 15px" class="input">
+            <input type="radio" name="" id="" />
+          </div>
+          <div style="padding: 15px" class="input">
+            <input type="radio" name="" id="" />
+          </div>
+
+          <button>Transfer</button>
+        </form> -->
+
+        <div class="payment-methods">
+          <label class="payment-method group" for="$udo">
+            <input type="radio" name="payment" id="$udo" value="$udo" />
+            <div class="row">
+              <div class="out">
+                <div class="in"></div>
+              </div>
+              <!-- name` -->
+              <div class="bank-info">
+                <span class="bank-name">$udo</span>
+                <span class="account-type">Payment Wallet</span>
+              </div>
+            </div>
+            <!-- logo -->
+            <div class="bank-logo">
+              <img src="./images/$udo.svg" alt="Bank 1 Logo" />
+            </div>
+          </label>
+
+          <label class="payment-method group" for="safe">
+            <input type="radio" name="payment" id="safe" value="safe" />
+            <div class="row">
+              <div class="out">
+                <div class="in"></div>
+              </div>
+              <!-- name` -->
+              <div class="bank-info">
+                <span class="bank-name">Safe Trust Bank</span>
+                <span class="account-type">Bank Transfer</span>
+              </div>
+            </div>
+            <!-- logo -->
+            <div class="bank-logo">
+              <img src="./images/safetrust.svg" alt="Bank 1 Logo" />
+            </div>
+          </label>
+
+          <label class="payment-method group" for="pay">
+            <input type="radio" name="payment" id="pay" value="pay" />
+            <div class="row">
+              <div class="out">
+                <div class="in"></div>
+              </div>
+              <!-- name` -->
+              <div class="bank-info">
+                <span class="bank-name">Paystack</span>
+                <span class="account-type">Payment Gateway</span>
+              </div>
+            </div>
+            <!-- logo -->
+            <div class="bank-logo">
+              <img src="./images/paystack.svg" alt="Bank 1 Logo" />
+            </div>
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <!-- modal -->
+  </body>
+</html>
