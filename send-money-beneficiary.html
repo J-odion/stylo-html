@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Send Money</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="sign-in">
+      <!-- navigation -->
+      <div class="nav">
+        <a href="">
+          <div class="back">
+            <img src="./images/arrow-left-black.svg" alt="" />
+          </div>
+        </a>
+      </div>
+
+      <div class="container">
+        <h1>Send Money</h1>
+        <p>Enter beneficiary details</p>
+
+        <form action="#popup2">
+          <label for="bank-name">Beneficiary Bank</label>
+          <div style="padding: 15px" class="input">
+            <a class="input" href="#popup1">Select Bank</a>
+          </div>
+
+          <label for="account-number">Account Number</label>
+          <input
+            type="number"
+            name="account-number"
+            id="account-number"
+            placeholder="0160190765"
+          />
+          <label for="acount-name">Account Name</label>
+          <input
+            type="text"
+            name="acount-name"
+            id="acount-name"
+            placeholder=""
+          />
+          <label for="amount">Amount</label>
+          <div class="input">
+            <p style="margin-left: 10px">₦</p>
+            <input type="number" name="amount" id="amount" placeholder="" />
+          </div>
+
+          <label for="email">Narration (optional)</label>
+          <textarea
+            style="padding: 10px"
+            class="input"
+            rows="4"
+            cols="50"
+            placeholder="e.g. Maize Investment Profit"
+          ></textarea>
+          <button>Transfer</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- modal -->
+    <div id="popup1" class="overlay">
+      <div class="popup popup1">
+        <h2>Select a Bank</h2>
+        <a class="close" href="#">&times;</a>
+        <div class="group">
+          <!-- search bar -->
+          <div style="width: 100%" class="search-bar product-left">
+            <img src="./images/search.svg" alt="" />
+            <input type="text" placeholder="Search for bank name" />
+          </div>
+          <!--  -->
+        </div>
+        <div class="menu-lists">
+          <!-- item -->
+          <a href="">
+            <div class="list row">
+              <p>ABC MICROFINANCE BANK</p>
+              <img src="./images/arrow-down.svg" alt="" />
+            </div>
+          </a>
+          <!-- item -->
+          <a href="">
+            <div class="list row">
+              <p>BAAC BANK</p>
+              <img src="./images/arrow-down.svg" alt="" />
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div id="popup2" class="overlay">
+      <div class="popup popup2">
+        <div class="container">
+          <div class="down">
+            <h1>Confirm Transaction</h1>
+            <a class="close" href="#">&times;</a>
+          </div>
+          <p>
+            Enter your transaction PIN to confirm transfer of ₦8,500 to
+            Chinenyeze Bright Thirdname
+          </p>
+
+          <form action="./success.html">
+            <input type="number" name="account-number" id="account-number" />
+            <button>Send</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
