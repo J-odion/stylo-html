@@ -164,7 +164,7 @@ a{
   padding: 5px;
 }
 /* home page  */
-.homepage, .products, .about-product, .notification-screen, .sign-in{
+.homepage, .products, .about-product, .notification-screen, .sign-in, .card{
   padding: 20px;
   width: 100%;
   height: 100vh;
@@ -314,14 +314,13 @@ font-size: 10px !important;
 .product-left{
   width: 89%;
 }
-
 /* product-info page styling */
 .single-product{
   width: 100%;
   height: 100vh;
   overflow-x: hidden;
 }
-.product-header{
+.product-header, .card-header{
   background-color: #005655;
   color: #EDEFF5;
   padding: 20px 0;
@@ -1309,4 +1308,47 @@ input[type="radio"]:checked+.bank-info .bank-name {
   display: flex;
   width: 100%;
   justify-content: space-between;
+}
+h1 em{
+  color: #ffffff;
+}
+.card-header{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center;
+}
+.teal{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.oths{
+  display: flex;
+  gap: 140px;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.options{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: solid 1px #EDEFF5;
+  padding: 10px;
+  border-radius: 5px;
+}
+.options h2{
+  color: #005655;
+  font-size: 18px;
+  font-weight: 700;
+}
+.options p{
+  color: #72747D;
+  font-size: 12px;
+  font-weight: 400;
+}
+.menus-options{
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
 }
