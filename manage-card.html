@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Security</title>
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="security">
+        <div class="nav">
+            <a href="">
+                <div class="back">
+                    <img src="./images/arrow-left-black.svg" alt="" />
+                </div>
+            </a>
+        </div>
+        <h3 class="primary-text down">Manage Card</h3>
+
+        <div class="groupedcards">
+            <!-- item -->
+            <a href="./card-transaction.html" class="shadow">
+                <div class="card-item">
+                    <div class="cardmonitored">
+                        <img src="./images/cardtransactions.svg" alt="">
+                        <div class="texts">
+                            <p class=" cardtext">Card Transactions</p>
+                        </div>
+                    </div>
+
+                    <div class="texts">
+                        <img src="./images/arrow-down.svg" alt="" />
+                    </div>
+                </div>
+            </a>
+            <!-- item -->
+            <a href="" class="shadow">
+                <div class="card-item">
+                    <div class="cardmonitored">
+                        <img src="./images/cardoverdraft.svg" alt="">
+                        <div class="texts">
+                            <p class=" cardtext">Card Overdraft</p>
+                        </div>
+                    </div>
+                    <div class="texts">
+                        <img src="./images/arrow-down.svg" alt="" />
+                    </div>
+                </div>
+            </a>
+            <!-- item -->
+            <a href="./card-pin.html" class="shadow">
+                <div class="card-item">
+                    <div class="cardmonitored">
+                        <img src="./images/changecardpin.svg" alt="">
+                        <div class="texts">
+                            <p class=" cardtext">Change PIN</p>
+                        </div>
+                    </div>
+                    <div class="texts">
+                        <img src="./images/arrow-down.svg" alt="" />
+                    </div>
+                </div>
+            </a>
+            <!-- item -->
+            <a href="#popup3" class="shadow">
+                <div class="card-item">
+                    <div class="cardmonitored">
+                        <img src="./images/blockcard.svg" alt="">
+                        <div class="texts">
+                            <p class=" cardtext">Block Card</p>
+                        </div>
+                    </div>
+                    <div class="texts">
+                        <img src="./images/arrow-down.svg" alt="" />
+                    </div>
+                </div>
+            </a>
+            <!-- item -->
+            <a href="./change-password.html" class="shadow">
+                <div class="card-item">
+                    <div class="cardmonitored">
+                        <img src="./images/replacecard.svg" alt="">
+                        <div class="texts">
+                            <p class=" cardtext">Replace Card</p>
+                        </div>
+                    </div>
+                    <div class="texts">
+                        <img src="./images/arrow-down.svg" alt="" />
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+
+    <div id="popup3" class="blockoverlay">
+        <div class="popup popup2">
+            <div class="container">
+                <div class="down">
+                    <h1>Are you sure ?</h1>
+                    <a class="close" href="#">&times;</a>
+                </div>
+                <p>
+                    Are you sure you want to block this card?
+                </p>
+
+                
+                <div class="row">
+                    <button class="outline">Cancel</button>
+                    <button class="filled">Block Card</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

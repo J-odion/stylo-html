@@ -1202,6 +1202,10 @@ textarea{
   height: 70% !important;
 }
 
+.popup3{
+  height: 40% !important;
+}
+
 .popup h2 {
   margin-top: 0;
   color: #333;
@@ -1460,11 +1464,110 @@ h1 em{
   border-radius: 5px;
   width: 55%;
   text-align: center;
-
 }
 .popup2 span{
   font-weight: bold;
 }
 .rotate-left{
   rotate: 180deg;
+}
+.action-menus{
+  border: rgba(0, 86, 85, 0.4) solid 1px;
+  padding: 16px;
+  border-radius: 10px;
+  display: flex;
+  margin: 20px 0;
+  justify-content: space-between;
+}
+.action-menus button{
+  outline: none;
+  border: none;
+  /* background: none; */
+}
+.each{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.each .img{
+  padding: 14px;
+  background-color: rgba(0, 86, 85, 0.1);
+  border-radius: 30px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.each p{
+  font-size: 16px;
+  color:rgba(0, 86, 85, 1);
+  font-weight: 400;
+  text-transform: capitalize;
+}
+.groupedcards{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.cardtext{
+  display: flex;
+  justify-content: center !important;
+  align-items: center !important;
+  color: #005655;
+  font-size: 18px;
+}
+.cardmonitored{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.card-item{
+  display: flex;
+  justify-content: space-between;
+  border: rgba(237, 239, 245, 1) solid 1px;
+  padding: 10px;
+  border-radius: 10px;
+  align-items: center;
+}
+
+.blockoverlay {
+  position: fixed;
+  top: 40%;
+  left: 0;
+  width: 94%;
+  margin: auto;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: end;
+}
+
+.blockoverlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+#popup3 .container .row{
+  margin-top: 20px;
+}
+#popup3 .container .row .outline{
+  background: none;
+  outline: none;
+  border: 1px rgba(114, 116, 125, 1) solid;
+  border-radius: 5px;
+  padding: 10px;
+  width: 43%;
+}
+#popup3 .container .row .filled{
+  background: rgba(239, 76, 73, 1);
+  outline: none;
+  border: none;
+  color: #FFF;
+  border-radius: 5px;
+  padding: 14px 24px;
+  width: 43%;
 }
