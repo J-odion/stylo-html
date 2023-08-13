@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Request Card</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/css/intlTelInput.css"
+    />
+  </head>
+  <body>
+    <div class="edit-profile-screen">
+      <div class="nav">
+        <a href="">
+          <div class="back">
+            <img src="./images/arrow-left-black.svg" alt="" />
+          </div>
+        </a>
+        <div class="title notice">
+          <h3>Request Card</h3>
+          <p>
+            Enter card delivery address.  (Actual address, not a P.O. Box)
+          </p>
+        </div>
+      </div>
+     
+      
+
+      <div class="container">
+        <form action="./request-card-confirm-details.html">
+          <div class="row">
+            <div class="gend">
+              <label for="State">State</label>
+              <div class="input">
+                <select name="State">
+                  <option value="">State</option>
+                </select>
+              </div>
+            </div>
+            <div class="dob">
+              <label for="state">LGA</label>
+              <div class="input">
+                <select name="LGA">
+                  <option value="">LGA</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="gend">
+              <label for="State">Building Number</label>
+              <div class="input">
+                <input type="text">
+              </div>
+            </div>
+            <div class="dob">
+              <label for="state">Street</label>
+              <div class="input">
+                <input type="text">
+              </div>
+            </div>
+          </div>
+          <label for="email">Full Adress</label>
+          <input
+            type="text"
+            name="home-address"
+            id="home-address"
+            placeholder="A37 Omobola Street, Lawanson Surulere Lagos."
+          />
+
+          <label for="email">Phone Number</label>
+          <input name="phone" type="text" id="phone" />
+
+          <div class="notice-green">
+            <p>Your wallet account will be charged -<span> ₦2000 </span>(VAT exclusive) for the physical card</p>
+          </div>
+         
+          <button>Place Request</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/js/intlTelInput.min.js"></script>
+    <script>
+      var input = document.querySelector('#phone')
+      window.intlTelInput(input, {
+        initialCountry: 'ng',
+        separateDialCode: true,
+        autoFormat: true,
+        validation: true,
+        utilsScript:
+          'https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/js/utils.js',
+      })
+    </script>
+  </body>
+</html>

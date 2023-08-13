@@ -1352,3 +1352,116 @@ h1 em{
   gap: 20px;
   flex-direction: column;
 }
+.card-type{
+  display: flex;
+  gap: 20px;
+}
+.select-card{
+  border: 1px solid #005655;
+  width: 30%;
+  height: 100px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.select-card label{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-top: 0px !important;
+  gap: 10px;
+  padding: 10px;
+}
+.select-card img{
+  position: relative;
+  right: 25px;
+}
+.Soon{
+  text-align: right;
+  margin-right: 30px;
+}
+.request-card-input{
+  justify-content: space-between;
+  padding: 10px !important;
+}
+.request-card-input img{
+  rotate: 90deg;
+}
+.link-button{
+  padding: 12px;
+  background: #005655;
+  color: #ffffff !important;
+  text-align: center;
+  border-radius: 5px;
+  margin-top: 50px;
+}
+
+.notice-green{
+  background-color: rgba(50, 167, 90, 0.05);
+  border: 1px solid #005655;
+  padding: 10px 30px;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.notice-green p{
+  text-align: center;
+  font-size: 16px;
+  color: #005655;
+}
+.notice-green span{
+  font-weight: bold;
+}
+
+.holder{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.boxes {
+  border: solid 1px rgba(114, 116, 125, 0.2);
+  border-radius: 5px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.boxes p{
+  line-height: 20.42px;
+}
+.boxes .small{
+  color: #72747D;
+  font-size: 14px;
+}
+.boxes .cont{
+  font-size: 18px;
+}
+.butto{
+  width: 100%;
+  display: flex;
+  margin-top: 40px;
+  justify-content: space-between;
+}
+.edit-request{
+  border: 1px solid #005655;
+  padding: 16px;
+  border-radius: 5px;
+  width: 40%;
+  text-align: center;
+}
+.confirm-request{
+  background-color:  #005655;
+  color: #ffffff;
+  padding: 16px;
+  border-radius: 5px;
+  width: 55%;
+  text-align: center;
+
+}
+.popup2 span{
+  font-weight: bold;
+}

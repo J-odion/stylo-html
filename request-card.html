@@ -19,80 +19,68 @@
       <div class="container">
         <h1>Request Card</h1>
         <p>Choose a card brand</p>
-
         <form action="">
-          <div class="payment-methods">
-            <label class="payment-method group" for="$udo">
-              <input type="radio" name="payment" id="$udo" value="$udo" />
-              <div class="row">
-                <div class="out">
-                  <div class="in"></div>
+          <div class="card-type">
+            <div class="select-card">
+              <label class="clickable" for="$udo">
+                <input type="radio" name="payment" id="$udo" value="$udo" />
+                <div class="row">
+                  <div class="out">
+                    <div class="in"></div>
+                  </div>
+                  <!-- name` -->
                 </div>
-                <!-- name` -->
-                <div class="bank-info">
-                  <span class="bank-name">$udo</span>
-                  <span class="account-type">Payment Wallet</span>
+                <!-- logo -->
+                <div class="bank-logo">
+                  <img src="./images/visa.svg" alt="Bank 1 Logo" />
                 </div>
-              </div>
-              <!-- logo -->
-              <div class="bank-logo">
-                <img src="./images/$udo.svg" alt="Bank 1 Logo" />
-              </div>
-            </label>
+              </label>
+            </div>
 
-            <label class="payment-method group" for="safe">
-              <input type="radio" name="payment" id="safe" value="safe" />
-              <div class="row">
-                <div class="out">
-                  <div class="in"></div>
+            <div class="select-card">
+              <label class="clickable" for="safe">
+                <input type="radio" name="payment" id="safe" value="safe" />
+                <div class="row">
+                  <div class="out">
+                    <div class="in"></div>
+                  </div>
+                  <!-- name` -->
                 </div>
-                <!-- name` -->
-                <div class="bank-info">
-                  <span class="bank-name">Safe Trust Bank</span>
-                  <span class="account-type">Bank Transfer</span>
+                <!-- logo -->
+                <div class="bank-logo">
+                  <img src="./images/verve.svg" alt="Bank 1 Logo" />
                 </div>
-              </div>
-              <!-- logo -->
-              <div class="bank-logo">
-                <img src="./images/safetrust.svg" alt="Bank 1 Logo" />
-              </div>
-            </label>
+              </label>
+            </div>
 
-            <label class="payment-method group" for="pay">
-              <input type="radio" name="payment" id="pay" value="pay" />
-              <div class="row">
-                <div class="out">
-                  <div class="in"></div>
+            <div class="select-card">
+              <label class="clickable" for="pay">
+                <input type="radio" name="payment" id="pay" value="pay" />
+                <div class="row">
+                  <div class="out">
+                    <div class="in"></div>
+                  </div>
+                  <!-- name` -->
                 </div>
-                <!-- name` -->
-                <div class="bank-info">
-                  <span class="bank-name">Paystack</span>
-                  <span class="account-type">Payment Gateway</span>
+                <!-- logo -->
+                <div class="bank-logo">
+                  <img src="./images/master-card.svg" alt="Bank 1 Logo" />
                 </div>
-              </div>
-              <!-- logo -->
-              <div class="bank-logo">
-                <img src="./images/paystack.svg" alt="Bank 1 Logo" />
-              </div>
-            </label>
-          </div>
-
-          <div class="gend">
-            <label for="gender">Business Category</label>
-            <div class="input">
-              <select name="gender">
-                <option value="">Male</option>
-                <option value="female">Female</option>
-                <option value="male">Male</option>
-                <option value="other">Other</option>
-                <option value="Prefer not to answer">
-                  Perfer not to Answer
-                </option>
-              </select>
+              </label>
             </div>
           </div>
+          <p class="Soon"><i>*coming soon</i></p>
 
-          <button>Next</button>
+          <a href="">
+            <div class="input request-card-input">
+              <p> Nigerian Naira (NGN)</p>
+              <img src="./images/arrow-down.svg" alt="">
+             </div>
+          </a>
+
+          <a class="link-button" href="./request-card-details.html">
+            Next
+          </a>
         </form>
       </div>
     </div>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Confirm Request</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/css/intlTelInput.css"
+    />
+  </head>
+  <body>
+    <div class="edit-profile-screen">
+      <div class="nav">
+        <a href="">
+          <div class="back">
+            <img src="./images/arrow-left-black.svg" alt="" />
+          </div>
+        </a>
+        <div class="title notice">
+          <h3>Confirm Request</h3>
+          <p>Ensure the delivery address and phone number provided are correct and will be accessible for the next two weeks</p>
+        </div>
+      </div>
+
+<div class="holder">
+
+    <!-- 1 -->
+    <div class="boxes">
+        <p class="head primary-text">
+            Delivery Information
+        </p>
+          <div class="">
+              <p class="small">
+                  Delivery Address
+              </p>
+              <p class="cont">
+                  Suite 34-35, Zone 4, Musawa, House, <br />
+                  2 Constantine St, Wuse, Abuja
+              </p>
+          </div>
+
+          <div class="">
+              <p class="small">
+                  Contact Number
+              </p>
+              <p class="cont">
+                  +234 810 829 8990
+              </p>
+              <p class="cont">
+                  +234 810 829 8990
+              </p>
+          </div>
+      </div>
+
+        <!-- 2 -->
+      <div class="boxes">
+          <p class="head primary-text">
+            Stylovault Linked Account
+          </p>
+            <div class="">
+                <p class="small">
+                    Business Name
+                </p>
+                <p class="cont">
+                    MamaTee POS Business
+                </p>
+            </div>
+
+            <div class="">
+                <p class="small">
+                    Email Address
+                </p>
+                <p class="cont">
+                    mamateepos@gmail.com
+                </p>
+            </div>
+        </div>
+
+        <!-- 3 -->
+        <div class="boxes">
+          <p class="head primary-text">
+            Payment Details
+          </p>
+            <div class="">
+                <p class="small">
+                    Delivery Address
+                </p>
+                <p class="cont">
+                    Suite 34-35, Zone 4, Musawa, House, <br />
+                    2 Constantine St, Wuse, Abuja
+                </p>
+            </div>
+
+            <div class="">
+                <p class="small">
+                    Contact Number
+                </p>
+                <p class="cont">
+                    +234 810 829 8990
+                </p>
+                <p class="cont">
+                    +234 810 829 8990
+                </p>
+            </div>
+        </div>
+
+
+        <div class="butto">
+            <a href="./request-card-details.html" class="edit-request" >Edit</a>
+            <a class="confirm-request" href="#popup2">Confirm</a>
+        </div>
+</div>
+  </div>
+ 
+      
+    </div>
+
+    <div id="popup2" class="overlay">
+        <div class="popup popup2">
+          <div class="container">
+            <div class="down">
+              <h1>Confirm Transaction</h1>
+              <a class="close" href="#">&times;</a>
+            </div>
+            <p>
+                Enter your transaction PIN to confirm card request <br/> with a 
+                delivery fee of <span>₦2,500</span>
+            </p>
+  
+            <form action="./success-go-back.html">
+              <input type="number" name="account-number" id="account-number" />
+              <button>Send Request</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+    
+  </body>
+</html>
