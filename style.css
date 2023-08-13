@@ -1385,7 +1385,7 @@ h1 em{
   justify-content: space-between;
   padding: 10px !important;
 }
-.request-card-input img{
+.request-card rotate{
   rotate: 90deg;
 }
 .link-button{
@@ -1464,4 +1464,7 @@ h1 em{
 }
 .popup2 span{
   font-weight: bold;
+}
+.rotate-left{
+  rotate: 180deg;
 }
