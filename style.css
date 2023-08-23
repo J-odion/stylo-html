@@ -1593,11 +1593,14 @@ h1 em{
   gap: 30px;
   align-items: center;
 }
-.copy-text,
 .inn{
   display: flex;
   align-items: center;
   gap: 5px;
+}
+.inn button{
+  background: none !important;
+  border: none;
 }
 .index{
   display: flex;
@@ -1607,4 +1610,60 @@ h1 em{
   content: "";
   display: block;
   fill: #ffffff !important;
+}
+.errorcontainer{
+  background: url("./images/errorbg.svg") center left no-repeat #fff;
+  display: flex;
+  border: #0863E8 1px solid;
+  justify-content: space-between;
+  width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  align-items: top;
+  padding: 0 5px 0 0;
+}
+.rec{
+  background-color: #0863E8;
+  height: 84px;
+  width: 10px;
+  position: relative;
+}
+.side p{
+  color: #0863E8 !important;
+  font-size: 10px;
+}
+.side h1{
+  font-size: 16px;
+  color: #0863E8 !important;
+}
+.lin{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.side{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.closes{
+  margin-right: 10px;
+  margin-top: 15px;
+}
+.over {
+  position: fixed;
+  margin: auto;
+  bottom: 10px;
+  left: 10px;
+  transition: opacity 500ms;
+  width: 94%;
+  visibility: hidden;
+  opacity: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+.over:target {
+  visibility: visible;
+  opacity: 1;
 }
