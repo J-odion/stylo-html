@@ -1667,3 +1667,105 @@ h1 em{
   visibility: visible;
   opacity: 1;
 }
+.credit-profile-header {
+  background: url("./images/Unionbg-art.svg") center right no-repeat #005655;
+  color: floralwhite;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+/* .control {
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-self: start;
+  position: relative;
+  left: -20px;
+} */
+
+.post-header {
+  background-color: rgba(0, 86, 85);
+  margin-top: -22px;
+  color: #ffffff;
+  padding: 0 16px;
+}
+.progress-bar {
+  background: rgba(255, 255, 255, 0.25);
+  width: 100%;
+  height: 10px;
+  border-radius: 10px;
+}
+.progress {
+  background-color: rgb(255, 255, 255);
+  width: 75%;
+  height: 10px;
+  border-radius: 5px;
+}
+
+.credit-profile-header .setup {
+  /* v */
+  color: #fff !important;
+  background: rgba(255, 255, 255, 0.11);
+  margin-top: 20px;
+  margin-bottom: 50px;
+  width: 50%;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 20px;
+  font-size: 16px;
+}
+.setup-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.spent-credit {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+}
+.spent-credit p {
+  color: #ffffde;
+}
+.spending-cap {
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  align-items: right;
+}
+.spending-cap p {
+  color: #ffffde;
+  display: flex;
+  justify-content: right;
+  align-content: right;
+  align-items: right;
+}
+.other-contents {
+  display: flex;
+  flex-direction: column;
+  padding-left: 16px;
+  padding-top: 16px;
+  padding-right: 16px;
+  gap: 16px;
+}
+
+.spent-credit-spending-cap {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 20px;
+  padding-bottom: 48px;
+  padding-top: 12px;
+}
+.credit-score-repayment-plan-credit-report {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.credit-score {
+  padding: 10px;
+  border-radius: 5px;
+  margin-left: 5px;
+}
+.credit-score h3 {
+}
