@@ -1571,3 +1571,39 @@ h1 em{
   padding: 14px 24px;
   width: 43%;
 }
+.coverhead{
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.coverhead h3{
+  color: #ffffff;
+}
+.coverhead p{
+  color: rgba(255, 255, 255, 0.3);
+}
+.rightie{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.logoandbal, .tsh,.ths,.indie{
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  align-items: center;
+}
+.inn{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.index{
+  display: flex;
+  flex-direction: column;
+}
+.ths img::after{
+  content: "";
+  display: block;
+  fill: #ffffff !important;
+}
