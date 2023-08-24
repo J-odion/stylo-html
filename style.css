@@ -969,12 +969,9 @@ textarea{
   justify-content: center;
   align-items: center;
 }
-
-
 .upload-file input{
   background-color: #fff !important;
 }
-
 .file-upload-container {
   display: flex;
   flex-direction: column;
@@ -1203,7 +1200,7 @@ textarea{
 }
 
 .popup3{
-  height: 40% !important;
+  height: 20% !important;
 }
 
 .popup h2 {
@@ -1533,10 +1530,11 @@ h1 em{
 
 .blockoverlay {
   position: fixed;
-  top: 40%;
+  top: 0;
   left: 0;
-  width: 94%;
+  width: 100%;
   margin: auto;
+  height: 100vh;
   right: 0;
   background: rgba(0, 0, 0, 0.7);
   transition: opacity 500ms;
@@ -1544,7 +1542,7 @@ h1 em{
   opacity: 0;
   display: flex;
   justify-content: flex-end;
-  align-items: end;
+  align-items: center;
 }
 
 .blockoverlay:target {
@@ -1674,13 +1672,6 @@ h1 em{
   flex-direction: column;
   padding: 20px;
 }
-/* .control {
-  justify-content: flex-start;
-  align-items: flex-start;
-  align-self: start;
-  position: relative;
-  left: -20px;
-} */
 
 .post-header {
   background-color: rgba(0, 86, 85);
@@ -1725,22 +1716,17 @@ h1 em{
   justify-content: left;
   align-items: left;
 }
-.spent-credit p {
+.spent-credit p,.spending-cap p  {
   color: #ffffde;
+  font-weight: 200;
 }
 .spending-cap {
   display: flex;
   flex-direction: column;
-  justify-content: right;
-  align-items: right;
+  text-align: end;
+  gap: 10px;
 }
-.spending-cap p {
-  color: #ffffde;
-  display: flex;
-  justify-content: right;
-  align-content: right;
-  align-items: right;
-}
+
 .other-contents {
   display: flex;
   flex-direction: column;
@@ -1749,7 +1735,97 @@ h1 em{
   padding-right: 16px;
   gap: 16px;
 }
+#popupcredit{
+  height: 100vh !important;
+  position: fixed;
+  background-color: rgba(0, 13, 13, 0.2);
+  padding: 0;
+}
+.credit-over{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  border-top-right-radius: 10px ;
+  border-top-left-radius: 10px ;
+  width: 100%;
+  height: 30vh !important;
+  position: fixed;
+  bottom: 0;
+  background-color: #fefefe;
+  /* visibility: hidden; */
+  transition: opacity 500ms;
+  opacity: 1;
+  margin:  0 auto;
+  padding: 20px;
+}
+.credit-over:target{
+  visibility: visible;
+  opacity: 1;
+}
+.lne{
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center;  */
+}
+.fill{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+}
+.lne .closes{
+  position: absolute;
+  top: 0px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: 200;
+  text-decoration: none;
+  color: #333;
+}
+.lne .closes:hover {
+  color: #06D85F;
+}
+.middle-card{
+  margin-bottom: 40% !important;
+}
 
+.fill .input{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 8px;
+  background-color: rgba(237, 239, 245, 1);
+  border-radius: 5px;
+  flex: 1;
+}
+.fill .input input{
+  outline: none;
+  border: none;
+  background: none;
+}
+.fill p{
+  /* color: rgba(114, 116, 125, 1); */
+  font-size: 16px;
+}
+.fill .input button, .credit-over  button{
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgb(199, 224, 223);
+  color: #005655;
+  font-size: 16px;
+}
+.credit-over form{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+.credit-over button{
+  background-color: #005655;
+  color: #f3f3f3;
+  padding: 14px;
+}
 .spent-credit-spending-cap {
   display: flex;
   justify-content: space-between;
