@@ -1644,7 +1644,6 @@ h1 em{
   flex-direction: column;
   gap: 10px;
 }
-
 .closes{
   margin-right: 10px;
   margin-top: 15px;
@@ -1844,4 +1843,41 @@ h1 em{
   margin-left: 5px;
 }
 .credit-score h3 {
+}
+
+.invoice .emptyinvoice a{
+  background-color: #005655 !important;
+  color: #fff;
+  padding: 10px 0;
+}
+
+.text .invoice-items {
+ 
+}
+h3.invoice-item {
+  color: #72747D !important;
+  font-weight: 600 !important;
+  
+}
+
+.invoice-subtext {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.invoice-items .inline .monitored .texts{
+  display: flex;
+  flex-direction: row;
+  color: #72747D !important;
+}
+
+.monitored .texts p {
+  font-size: 12px; 
+  padding-left: 10px;
+}
+.totalz{
+  background-color: rgba(0, 199, 30, 0.1);
+  border: #005655 solid 1px;
+  border-radius: 5px;
+  padding: 10px;
 }
